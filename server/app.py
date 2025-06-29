@@ -5,7 +5,9 @@ import os
 
 def create_app():
     app = Flask(__name__, static_folder="../client", static_url_path="")
-    CORS(app)
+
+    # 👇 Allow requests only from your GitHub Pages domain
+    CORS(app, origins=["https://theunnamedone-design.github.io"])
 
     app.register_blueprint(api)
 
