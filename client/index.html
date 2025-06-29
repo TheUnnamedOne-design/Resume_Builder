@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume & Cover Letter Generator</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  </head>
+  <body class="m-0 p-0">
+
+  <section id="header" class="w-100 mb-0 p-0" style="padding: 0; margin-bottom: 0; ">
+    <div class="container-fluid nav-bar">
+   <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+    
+    <!-- Brand/logo and title -->
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <i class="bi bi-file-person-fill logo fs-3"></i>
+      <span class="fs-2 brand-name">CVision</span>
+    </a>
+
+    <!-- Navigation Pills -->
+    <ul class="nav nav-pills me-5"> 
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5">Personal details</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5">Education</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5">Target</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link fs-5">Generate</a>
+      </li>
+    </ul>
+
+
+  </header>
+  </div>
+    </section>
+
+
+    <section id="home" style="height: 950px;">
+        <div class="container-fluid col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          
+          <!-- Right-side image -->
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img 
+              src="./images/Firefly_generate an image with a blue and light purplish theme enclosed in a spherical object 488459-modified.png" 
+              class="d-block mx-lg-auto img-fluid" 
+              alt="Bootstrap Themes" 
+              width="600" 
+              height="auto" 
+              loading="lazy"
+              class=" image-home"
+            >
+          </div>
+
+          <!-- Left-side text content -->
+          <div class="col-lg-6">
+            <h1 class="display-5 mb-3 home-intro">
+              CVision
+            </h1>
+            <p class="lead home-tag-line fs-2">
+              Resumes That Get You Noticed.
+            </p>
+            <p class="lead home-text fs-9">
+              Whether you're a student, a professional, or making a career change, CVision helps you put your best foot forward with AI-crafted resumes that combine precision, design, and impact.
+            </p>
+
+            <!-- CTA buttons -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 home-start">
+                Build
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4 home-generate">
+                Generate
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <h1>AI Resume & Cover Letter Writer</h1>
+      <form id="resumeForm">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <textarea name="education" placeholder="Education" required></textarea>
+        <textarea
+          name="experience"
+          placeholder="Work Experience"
+          required
+        ></textarea>
+        <textarea
+          name="skills"
+          placeholder="Skills (comma separated)"
+          required
+        ></textarea>
+        <input
+          type="text"
+          name="job_role"
+          placeholder="Target Job Role"
+          required
+        />
+        <button type="submit">Generate</button>
+      </form>
+      <div id="loading" style="display: none">⏳ Generating...</div>
+      <div id="outputArea"></div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

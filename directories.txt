@@ -1,0 +1,45 @@
+resume-writer/
+├── client/                     # Plain HTML/CSS/JavaScript frontend
+│   ├── index.html              # Homepage with input form
+│   ├── preview.html            # Resume/cover letter preview page
+│   ├── styles/
+│   │   └── main.css            # All frontend styling
+│   └── js/
+│       └── main.js             # Form logic and API integration
+│
+├── server/                     # Flask backend
+│   ├── api/
+│   │   └── routes.py           # API endpoints for GPT, PDF, DB
+│   ├── services/
+│   │   ├── openai_service.py   # GPT-4 generation logic
+│   │   ├── pdf_service.py      # PDF conversion logic
+│   │   └── validation_service.py
+│   ├── models/
+│   │   └── resume_model.py     # ORM model for resumes
+│   ├── templates/
+│   │   └── resume_template.html # Jinja2 template for rendering resumes
+│   ├── utils/
+│   │   └── config.py           # Config and environment loader
+│   ├── app.py                  # Main Flask app entry
+│   └── __init__.py             # App factory init
+│
+├── pdf_engine/                 # PDF rendering module
+│   └── resume_template.html    # HTML template used for PDF export
+│
+├── database/                   # DB schema and seeders
+│   ├── models.py
+│   └── seed.py
+│
+├── docker/                     # Containerization setup
+│   ├── Dockerfile.backend
+│   ├── Dockerfile.frontend
+│   └── docker-compose.yml
+│
+├── tests/                      # Unit and integration tests
+│   ├── api_tests.py
+│   └── unit/
+│       ├── test_openai_service.py
+│       └── test_pdf_service.py
+│
+├── .env                        # Environment variables
+└── README.md                   # Project instructions and documentation
