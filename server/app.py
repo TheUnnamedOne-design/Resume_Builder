@@ -7,7 +7,10 @@ def create_app():
     app = Flask(__name__, static_folder="../client", static_url_path="")
 
     # ✅ Full GitHub Pages path
-    CORS(app, origins=["https://theunnamedone-design.github.io/Resume_Builder/"], supports_credentials=True)
+    CORS(app, resources={r"/*": {"origins": [
+    "https://theunnamedone-design.github.io",
+    "https://theunnamedone-design.github.io/Resume_Builder"
+    ]}})
 
     app.register_blueprint(api)
 
