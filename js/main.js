@@ -8,8 +8,13 @@ document.getElementById("resumeForm").addEventListener("submit", async (e) => {
 
   const formData = Object.fromEntries(new FormData(e.target).entries());
 
+  // 🌐 Detect environment and set backend URL
+  const baseURL = window.location.hostname.includes("localhost")
+    ? "http://localhost:5000" // Local development
+    : "https://resume-builder-cbjz.onrender.com"; // Production on Render
+
   try {
-    const response = await fetch("/generate", {
+    const response = await fetch(`${baseURL}/generate`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData)
