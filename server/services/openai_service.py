@@ -1,9 +1,12 @@
 import os
 import requests
-from dotenv import load_dotenv
-load_dotenv()
-print("✅ Environment variables loaded:")
-print("🧠 HF_MODEL_ID:", os.getenv("HF_MODEL_ID"))
+
+# Only load .env for local dev
+if os.getenv("HF_API_KEY") is None:
+    from dotenv import load_dotenv
+    load_dotenv()
+
+print("✅ Environment variables loaded.")
 
 def get_iam_token():
     url = "https://iam.cloud.ibm.com/identity/token"
@@ -24,10 +27,9 @@ def generate_response(prompt):
     payload = {"inputs": prompt}
     
     try:
-        print("🌍 Sending request to:", url)
+        print(f"🌍 Sending request to {model_id}")
         response = requests.post(url, headers=headers, json=payload, timeout=300)
-        print("📦 Status Code:", response.status_code)
-        print("📦 Raw Response:", response.text)
+        print(f"📦 Status Code: {response.status_code}")
         
         response.raise_for_status()
         data = response.json()
