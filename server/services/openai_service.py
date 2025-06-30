@@ -1,44 +1,39 @@
 import os
-import requests
+from dotenv import load_dotenv
+import google.generativeai as genai
 
-# Only load .env for local dev
-if os.getenv("HF_API_KEY") is None:
-    from dotenv import load_dotenv
-    load_dotenv()
-
+# ✅ Load environment variables from .env file
+load_dotenv()
 print("✅ Environment variables loaded.")
 
-def get_iam_token():
-    url = "https://iam.cloud.ibm.com/identity/token"
-    headers = {"Content-Type": "application/x-www-form-urlencoded"}
-    data = f"grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={os.getenv('IBM_API_KEY')}"
-    response = requests.post(url, headers=headers, data=data)
-    response.raise_for_status()
-    return response.json()["access_token"]
+# ✅ Configure Gemini API with your API key
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    raise ValueError("❌ GEMINI_API_KEY is not set in the .env file.")
+
+genai.configure(api_key=api_key)
+
+# ✅ Choose model: use "gemini-1.5-flash" for speed or "gemini-1.5-pro" for accuracy
+MODEL_NAME = "gemini-1.5-flash"
 
 def generate_response(prompt):
-    headers = {
-        "Authorization": f"Bearer {os.getenv('HF_API_KEY')}",
-        "Content-Type": "application/json"
-    }
-    model_id = os.getenv("HF_MODEL_ID")
-    url = f"https://api-inference.huggingface.co/models/{model_id}"
-    
-    payload = {"inputs": prompt}
-    
+    """
+    Generate a response using Gemini API.
+    """
     try:
-        print(f"🌍 Sending request to {model_id}")
-        response = requests.post(url, headers=headers, json=payload, timeout=300)
-        print(f"📦 Status Code: {response.status_code}")
-        
-        response.raise_for_status()
-        data = response.json()
+        print("🧠 Using Gemini Model:", MODEL_NAME)
 
-        if isinstance(data, dict) and "error" in data:
-            raise Exception("❌ Hugging Face Error: " + data["error"])
+        # Create model object
+        model = genai.GenerativeModel(MODEL_NAME)
 
-        return data[0]["generated_text"].strip()
-        
+        # Generate content from the prompt
+        print("📤 Sending prompt to Gemini...")
+        response = model.generate_content(prompt)
+
+        # Return the generated text
+        print("📦 Response received.")
+        return response.text.strip()
+
     except Exception as e:
         print("[❌ Error in generate_response]:", str(e))
         raise
