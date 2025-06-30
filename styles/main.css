@@ -15,6 +15,7 @@ body {
      --secondary-color: #9290C3; 
      --light-peach-color: #FBE4D6; 
      --medium-gray-color: #989898; 
+     --light-orange-color: #ff8e4d;
 
 
     --font-size-s: 0.9rem; 
@@ -46,7 +47,7 @@ html
 }
 
 .container {
-  max-width: 700px;
+  max-width: 1500px;
   margin: auto;
   background: white;
   padding: 30px;
@@ -178,4 +179,601 @@ button:hover {
 {
   color: var(--white-color);
   background-color: var(--dark-color);
+}
+
+.heading
+{
+  font-size: 100px;
+  color: var(--light-peach-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+
+.divider
+{
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+.section-part
+{
+  padding-top: 50px;
+  background-color: var(--dark-color);
+}
+
+.container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-start: 3;
+  padding-left: 400px;
+  padding-right: 400px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+.Field
+{
+  color: var(--light-peach-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+.Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+.Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--medium-gray-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+.Input-Field input:focus {
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+.section-part#Education
+{
+  background-color: var(--light-peach-color);
+}
+
+#Education .heading
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Education .instruction
+{
+  font-size: 50px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 20px;
+}
+
+#Education .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Education .Field
+{
+  color: var(--dark-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Education .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Education .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--medium-gray-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Education .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Education .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+
+
+#Projects.section-part
+{
+  background-color: var(--secondary-color);
+}
+
+#Projects .heading
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Projects .instruction
+{
+  font-size: 50px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 20px;
+}
+
+#Projects .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Projects .Field
+{
+  color: var(--dark-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Projects .Input-Field textarea
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Projects .Input-Field textarea:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Projects .Input-Field textarea:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Projects .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Projects .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Projects .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Projects .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+
+#Skills.section-part
+{
+  background-color: var(--primary-color);
+}
+
+#Skills .heading
+{
+  font-size: 100px;
+  color: var(--light-peach-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Skills .instruction
+{
+  font-size: 50px;
+  color: var(--light-peach-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 40px;
+}
+
+#Skills .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Skills .Field
+{
+  color: var(--light-peach-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Skills .Input-Field textarea
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Skills .Input-Field textarea:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Skills .Input-Field textarea:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Skills .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Skills .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Skills .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Skills .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+#Experience.section-part
+{
+  background-color: var(--secondary-color);
+}
+
+#Experience .heading
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Experience .instruction
+{
+  font-size: 50px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 40px;
+}
+
+#Experience .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Experience .Field
+{
+  color: var(--light-peach-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Experience .Input-Field textarea
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Experience .Input-Field textarea:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Experience .Input-Field textarea:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Experience .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Experience .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Experience .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Experience .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+
+#Target.section-part
+{
+  background-color: var(--dark-color);
+}
+
+#Target .heading
+{
+  font-size: 100px;
+  color: var(--light-peach-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Target .instruction
+{
+  font-size: 50px;
+  color: var(--light-peach-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 40px;
+}
+
+#Target .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Target .Field
+{
+  color: var(--light-peach-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Target .Input-Field textarea
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Target .Input-Field textarea:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Target .Input-Field textarea:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Target .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Target .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Target .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Target .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
+}
+
+#footer .section-part
+{
+  background-color: var(--dark-color);
+}
+
+
+#Generate.section-part
+{
+  background-color: var(--light-orange-color);
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+#Generate .heading
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ff684d;
+  border-radius: var(--border-radius-m);
+
+}
+
+#Generate .heading:hover
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  padding-left: 20px;
+  padding-right: 20px;
+
+   background-color: #b2ff4d;
+}
+
+#Generate button
+{
+  background-color: transparent; /* Or any color */
+}
+
+#Results.section-part
+{
+  background-color: var(--light-peach-color);
+  padding-bottom: 100px;
+}
+
+#Results .heading
+{
+  font-size: 100px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 60px;
+}
+#Results .instruction
+{
+  font-size: 50px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: 'Saira Stencil One';
+  margin-bottom: 40px;
+}
+
+#Results .instruction .adder-wrapper:hover {
+  font-size: 60px;
+  border-bottom: 2px solid var(--dark-color);
+  display: inline-block;
+}
+
+
+#Results .Field
+{
+  color: var(--light-peach-color);
+  font-size: 40px ;
+  font-family: 'Merriweather';
+}
+
+#Results .Input-Field textarea
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Results .Input-Field textarea:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Results .Input-Field textarea:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Results .Input-Field input
+{
+  font-size: 20px ;
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Results .Input-Field input:hover
+{
+  font-size: 20px ;
+  background-color: var(--light-peach-color);
+  border-radius: var(--border-radius-m);
+  font-family: 'Merriweather';
+}
+#Results .Input-Field input:focus {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-m);
+  outline: none; /* optional: removes default blue outline */
+}
+
+#Results .container-store
+{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 40px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 100px;
+  row-gap: 40px;
 }
