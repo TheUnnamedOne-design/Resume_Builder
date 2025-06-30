@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume & Cover Letter Generator</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  </head>
+  <body class="m-0 p-0">
+
+  <section id="header2" class="w-100 mb-0 p-0" style="padding: 0; margin-bottom: 0; ">
+    <div class="container-fluid nav-bar">
+   <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+    
+    <!-- Brand/logo and title -->
+    <a href="index.html#header" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <i class="bi bi-file-person-fill logo fs-3"></i>
+      <span class="fs-2 brand-name">CVision</span>
+    </a>
+
+    <!-- Navigation Pills -->
+    <ul class="nav nav-pills me-5"> 
+      <li class="nav-item">
+        <a href="index.html#header" class="nav-link fs-5">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Personal details" class="nav-link fs-5">Personal details</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Education" class="nav-link fs-5">Education</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Projects" class="nav-link fs-5">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Skills" class="nav-link fs-5">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Experience" class="nav-link fs-5">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Target" class="nav-link fs-5">Target</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Generate" class="nav-link fs-5">Generate</a>
+      </li>
+    </ul>
+  </header>
+  </div>
+    </section>
+
+
+
+<div class="divider"></div>
+
+<form id="Resume">
+  <section id="Personal details" class="section-part">
+    <p class="heading">Personal Details <i class="bi bi-pen"></i></p>
+    <div class="container-store">
+      <div class="Field">Name*: </div>
+      <div class="Input-Field"><input type="text" name="name" placeholder="Full Name" required /></div>
+      <div class="Field">Email*: </div>
+      <div class="Input-Field"><input type="text" name="email" placeholder="Email" required /></div>
+      <div class="Field">Phone number*: </div>
+      <div class="Input-Field"><input type="number" name="number" placeholder="Phone number" required /></div>
+      <div class="Field">Github link: </div>
+      <div class="Input-Field"><input type="text" name="Github" placeholder="Github link (optional)" /></div>
+      <div class="Field">Portfolio Link: </div>
+      <div class="Input-Field"><input type="text" name="Portfolio" placeholder="Portfolio link (optional)" /></div>
+    </div>
+  </section>
+
+
+  <div class="divider"></div>
+
+
+  <section id="Education" class="section-part">
+    <p class="heading">Education <i class="bi bi-backpack"></i></p>
+    <p class="instruction"> Click to add Education
+      <span class="adder-wrapper">
+        <i class="bi bi-plus-circle-fill adder"></i>
+      </span>
+    </p>
+    <div class="container-store">
+      <div class="Field">Degree</div>
+      <div class="Input-Field"><input type="text" name="Degree" placeholder="Degree" required></div>
+      <div class="Field">Institute</div>
+      <div class="Input-Field"><input type="text" name="Institute" placeholder="Institute" required></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+  
+  <section id="Projects" class="section-part">
+    <p class="heading">Projects <i class="bi bi-basket-fill"></i></p>
+    <p class="instruction"> Click to add Projects
+      <span class="adder-wrapper">
+        <i class="bi bi-plus-circle-fill adder"></i>
+      </span>
+    </p>
+
+    <div class="container-store">
+      <div class="Field">Title:</div>
+      <div class="Input-Field"><input type="text" name="Title" placeholder="Title"></div>
+      <div class="Field">Link:</div>
+      <div class="Input-Field"><input type="text" name="link" placeholder="Repo or deployed link (optional)"></div>
+      <div class="Field">Description:</div>
+      <div class="Input-Field"><textarea name="Description" placeholder="Description"></textarea></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <section id="Skills" class="section-part">
+    <p class="heading">Skills <i class="bi bi-magic"></i></p>
+    <p class="instruction"> Click to add Skills
+      <span class="adder-wrapper">
+        <i class="bi bi-plus-circle-fill adder"></i>
+      </span>
+    </p>
+
+    <div class="container-store">
+        <div class="Field">Skill:</div>
+        <div class="Input-Field"><input type="text" name="Skill" placeholder="Skill"></div>
+      </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <section id="Experience" class="section-part">
+    <p class="heading">Experience <i class="bi bi-person-gear"></i></p>
+    <p class="instruction"> Click to add Experience
+      <span class="adder-wrapper">
+        <i class="bi bi-plus-circle-fill adder"></i>
+      </span>
+    </p>
+
+    <div class="container-store">
+        <div class="Field">Role:</div>
+      <div class="Input-Field"><input type="text" name="Role" placeholder="Role"></div>
+      <div class="Field">Company/Institute:</div>
+      <div class="Input-Field"><input type="text" name="Company" placeholder="Company/Institute name"></div>
+      <div class="Field">Role Description:</div>
+      <div class="Input-Field"><textarea name="Role Description" placeholder="Role Description"></textarea></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="Target" class="section-part">
+    <p class="heading">Target <i class="bi bi-bullseye"></i></p>
+    <div class="container-store">
+        <div class="Field">Target Role:</div>
+      <div class="Input-Field"><input type="text" name="Target Role" placeholder="Target Role"></div>
+      <div class="Field">Target Company/Institute:</div>
+      <div class="Input-Field"><input type="text" name="Company Target" placeholder="Target Company/Institute name"></div>
+      </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="Generate" class="section-part">
+       <button><span class="heading">Generate <i class="bi bi-bullseye"></i></span></button>
+  </section>
+
+  <div class="divider"></div>
+  <section id="Results" class="section-part">
+    <p class="heading">Results <i class="bi bi-envelope-paper-fill"></i></p>
+
+    <div class="container">
+      <div id="outputArea"></div>
+    </div>
+  </section>
+
+  </form>
+
+  <footer id="footer" class="section-part">
+    <div class="container-fluid" data-bs-theme="dark">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        
+        <p class="col-md-4 mb-0 text-body-secondary">
+          © 2025 CSVision, Inc
+        </p>
+        
+        <a href="/" 
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" 
+        aria-label="Bootstrap">
+        <i class="bi bi-file-person-fill logo fs-3"></i>
+      </a>
+      
+      <ul class="nav col-md-4 justify-content-end">
+
+        <li class="nav-item">
+        <a href="#header" class="nav-link px-2 text-body-secondary" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Personal details" class="nav-link px-2 text-body-secondary">Personal details</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Education" class="nav-link px-2 text-body-secondary">Education</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Projects" class="nav-link px-2 text-body-secondary">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Skills" class="nav-link px-2 text-body-secondary">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Experience" class="nav-link px-2 text-body-secondary">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Target" class="nav-link px-2 text-body-secondary">Target</a>
+      </li>
+      <li class="nav-item">
+        <a href="#Generate" class="nav-link px-2 text-body-secondary">Generate</a>
+      </li>
+      </ul>    
+    </footer>
+  </div>
+  </footer>
+  
+
+
+    <div class="container">
+      <h1>AI Resume & Cover Letter Writer</h1>
+      <form id="resumeForm">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <textarea name="education" placeholder="Education" required></textarea>
+        <textarea
+          name="experience"
+          placeholder="Work Experience"
+          required
+        ></textarea>
+        <textarea
+          name="skills"
+          placeholder="Skills (comma separated)"
+          required
+        ></textarea>
+        <input
+          type="text"
+          name="job_role"
+          placeholder="Target Job Role"
+          required
+        />
+        <button type="submit">Generate</button>
+      </form>
+      <div id="loading" style="display: none">⏳ Generating...</div>
+      <div id="outputArea"></div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
