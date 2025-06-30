@@ -27,28 +27,28 @@
     <!-- Navigation Pills -->
     <ul class="nav nav-pills me-5"> 
       <li class="nav-item">
-        <a href="#header" class="nav-link fs-5" aria-current="page">Home</a>
+        <a href="sections_page.html#header" class="nav-link fs-5" aria-current="page">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#Personal details" class="nav-link fs-5">Personal details</a>
+        <a href="sections_page.html#Personal details" class="nav-link fs-5">Personal details</a>
       </li>
       <li class="nav-item">
-        <a href="#Education" class="nav-link fs-5">Education</a>
+        <a href="sections_page.html#Education" class="nav-link fs-5">Education</a>
       </li>
       <li class="nav-item">
-        <a href="#Projects" class="nav-link fs-5">Projects</a>
+        <a href="sections_page.html#Projects" class="nav-link fs-5">Projects</a>
       </li>
       <li class="nav-item">
-        <a href="#Skills" class="nav-link fs-5">Skills</a>
+        <a href="sections_page.html#Skills" class="nav-link fs-5">Skills</a>
       </li>
       <li class="nav-item">
-        <a href="#Experience" class="nav-link fs-5">Experience</a>
+        <a href="sections_page.html#Experience" class="nav-link fs-5">Experience</a>
       </li>
       <li class="nav-item">
-        <a href="#Target" class="nav-link fs-5">Target</a>
+        <a href="sections_page.html#Target" class="nav-link fs-5">Target</a>
       </li>
       <li class="nav-item">
-        <a href="#Generate" class="nav-link fs-5">Generate</a>
+        <a href="sections_page.html #Generate" class="nav-link fs-5">Generate</a>
       </li>
     </ul>
   </header>
@@ -87,12 +87,12 @@
 
             <!-- CTA buttons -->
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 home-start">
+              <a class="btn btn-primary btn-lg px-4 home-start" href="./sections_page.html">
                 Build
-              </button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4 home-generate">
-                Generate
-              </button>
+              </a>
+              <a class="btn btn-outline-secondary btn-lg px-4 home-generate" href="#contact">
+                Connect
+              </a>
             </div>
           </div>
 
@@ -102,140 +102,65 @@
 
 <div class="divider"></div>
 
-<form id="Resume">
-  <section id="Personal details" class="section-part">
-    <p class="heading">Personal Details <i class="bi bi-pen"></i></p>
-    <div class="container-store">
-      <div class="Field">Name*: </div>
-      <div class="Input-Field"><input type="text" name="name" placeholder="Full Name" required /></div>
-      <div class="Field">Email*: </div>
-      <div class="Input-Field"><input type="text" name="email" placeholder="Email" required /></div>
-      <div class="Field">Phone number*: </div>
-      <div class="Input-Field"><input type="number" name="number" placeholder="Phone number" required /></div>
-      <div class="Field">Github link: </div>
-      <div class="Input-Field"><input type="text" name="Github" placeholder="Github link (optional)" /></div>
-      <div class="Field">Portfolio Link: </div>
-      <div class="Input-Field"><input type="text" name="Portfolio" placeholder="Portfolio link (optional)" /></div>
-    </div>
-  </section>
+<section id="Team" class="section-part">
+    <p class="heading">Team <i class="bi bi-person-arms-up"></i></p>
 
-
-  <div class="divider"></div>
-
-
-  <section id="Education" class="section-part">
-    <p class="heading">Education <i class="bi bi-backpack"></i></p>
-    <p class="instruction"> Click to add Education
-      <span class="adder-wrapper">
-        <i class="bi bi-plus-circle-fill adder"></i>
-      </span>
-    </p>
-    <div class="container-store">
-      <div class="Field">Degree</div>
-      <div class="Input-Field"><input type="text" name="Degree" placeholder="Degree" required></div>
-      <div class="Field">Institute</div>
-      <div class="Input-Field"><input type="text" name="Institute" placeholder="Institute" required></div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-  
-  <section id="Projects" class="section-part">
-    <p class="heading">Projects <i class="bi bi-basket-fill"></i></p>
-    <p class="instruction"> Click to add Projects
-      <span class="adder-wrapper">
-        <i class="bi bi-plus-circle-fill adder"></i>
-      </span>
-    </p>
-
-    <div class="container-store">
-      <div class="Field">Title:</div>
-      <div class="Input-Field"><input type="text" name="Title" placeholder="Title"></div>
-      <div class="Field">Link:</div>
-      <div class="Input-Field"><input type="text" name="link" placeholder="Repo or deployed link (optional)"></div>
-      <div class="Field">Description:</div>
-      <div class="Input-Field"><textarea name="Description" placeholder="Description"></textarea></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-
-  <section id="Skills" class="section-part">
-    <p class="heading">Skills <i class="bi bi-magic"></i></p>
-    <p class="instruction"> Click to add Skills
-      <span class="adder-wrapper">
-        <i class="bi bi-plus-circle-fill adder"></i>
-      </span>
-    </p>
-
-    <div class="container-store">
-        <div class="Field">Skill:</div>
-        <div class="Input-Field"><input type="text" name="Skill" placeholder="Skill"></div>
+      <div class="container hold">
+        <img src="./images/ME.JPG" alt="">
       </div>
-  </section>
+      <p class="team-name">Aditya Narayan Bhandari</p>
+      <p class="quote">It was a great experience working on this project!</p>
 
-  <div class="divider"></div>
+</section>
 
+<div class="divider"></div>
 
-  <section id="Experience" class="section-part">
-    <p class="heading">Experience <i class="bi bi-person-gear"></i></p>
-    <p class="instruction"> Click to add Experience
-      <span class="adder-wrapper">
-        <i class="bi bi-plus-circle-fill adder"></i>
-      </span>
-    </p>
-
-    <div class="container-store">
-        <div class="Field">Role:</div>
-      <div class="Input-Field"><input type="text" name="Role" placeholder="Role"></div>
-      <div class="Field">Company/Institute:</div>
-      <div class="Input-Field"><input type="text" name="Company" placeholder="Company/Institute name"></div>
-      <div class="Field">Role Description:</div>
-      <div class="Input-Field"><textarea name="Role Description" placeholder="Role Description"></textarea></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+<section id="contact" class="py-5 section-part">
+   <p class="heading">Contact Us <i class="bi bi-phone"></i></p>
+  <div class="container">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h5>Get in touch</h5>
+        <p><i class="bi bi-envelope"></i> aditya.narayan2023@vitstudent.ac.in</p>
+        <p><i class="bi bi-telephone"></i> +91 xxxxx xxxxx</p>
+        <p><i class="bi bi-geo-alt"></i> VIT Chennai, Tamil Nadu, India</p>
+        <div>
+          <a href="https://www.linkedin.com/in/aditya-narayan-bhandari-8621a9293/" class="btn btn-outline-dark btn-sm me-2"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/TheUnnamedOne-design" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i></a>
+        </div>
       </div>
-  </section>
 
-  <div class="divider"></div>
-
-  <section id="Target" class="section-part">
-    <p class="heading">Target <i class="bi bi-bullseye"></i></p>
-    <div class="container-store">
-        <div class="Field">Target Role:</div>
-      <div class="Input-Field"><input type="text" name="Target Role" placeholder="Target Role"></div>
-      <div class="Field">Target Company/Institute:</div>
-      <div class="Input-Field"><input type="text" name="Company Target" placeholder="Target Company/Institute name"></div>
+      <!-- Contact Form -->
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
       </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <section id="Generate" class="section-part">
-       <button><span class="heading">Generate <i class="bi bi-bullseye"></i></span></button>
-  </section>
-
-  <div class="divider"></div>
-  <section id="Results" class="section-part">
-    <p class="heading">Results <i class="bi bi-envelope-paper-fill"></i></p>
-
-    <div class="container">
-      <div id="outputArea"></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  </form>
+
+
+<div class="divider"></div>
+
 
   <footer id="footer" class="section-part">
     <div class="container-fluid" data-bs-theme="dark">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top">
         
         <p class="col-md-4 mb-0 text-body-secondary">
           © 2025 CSVision, Inc
@@ -250,62 +175,34 @@
       <ul class="nav col-md-4 justify-content-end">
 
         <li class="nav-item">
-        <a href="#header" class="nav-link px-2 text-body-secondary" aria-current="page">Home</a>
+        <a href="sections_page.html#header" class="nav-link px-2 text-body-secondary" aria-current="page">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#Personal details" class="nav-link px-2 text-body-secondary">Personal details</a>
+        <a href="sections_page.html#Personal details" class="nav-link px-2 text-body-secondary">Personal details</a>
       </li>
       <li class="nav-item">
-        <a href="#Education" class="nav-link px-2 text-body-secondary">Education</a>
+        <a href="sections_page.html#Education" class="nav-link px-2 text-body-secondary">Education</a>
       </li>
       <li class="nav-item">
-        <a href="#Projects" class="nav-link px-2 text-body-secondary">Projects</a>
+        <a href="sections_page.html#Projects" class="nav-link px-2 text-body-secondary">Projects</a>
       </li>
       <li class="nav-item">
-        <a href="#Skills" class="nav-link px-2 text-body-secondary">Skills</a>
+        <a href="sections_page.html#Skills" class="nav-link px-2 text-body-secondary">Skills</a>
       </li>
       <li class="nav-item">
-        <a href="#Experience" class="nav-link px-2 text-body-secondary">Experience</a>
+        <a href="sections_page.html#Experience" class="nav-link px-2 text-body-secondary">Experience</a>
       </li>
       <li class="nav-item">
-        <a href="#Target" class="nav-link px-2 text-body-secondary">Target</a>
+        <a href="sections_page.html#Target" class="nav-link px-2 text-body-secondary">Target</a>
       </li>
       <li class="nav-item">
-        <a href="#Generate" class="nav-link px-2 text-body-secondary">Generate</a>
+        <a href="sections_page.html#Generate" class="nav-link px-2 text-body-secondary">Generate</a>
       </li>
       </ul>    
     </footer>
   </div>
   </footer>
   
-
-
-    <div class="container">
-      <h1>AI Resume & Cover Letter Writer</h1>
-      <form id="resumeForm">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <textarea name="education" placeholder="Education" required></textarea>
-        <textarea
-          name="experience"
-          placeholder="Work Experience"
-          required
-        ></textarea>
-        <textarea
-          name="skills"
-          placeholder="Skills (comma separated)"
-          required
-        ></textarea>
-        <input
-          type="text"
-          name="job_role"
-          placeholder="Target Job Role"
-          required
-        />
-        <button type="submit">Generate</button>
-      </form>
-      <div id="loading" style="display: none">⏳ Generating...</div>
-      <div id="outputArea"></div>
-    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
