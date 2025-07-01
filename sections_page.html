@@ -179,6 +179,10 @@
 
   <section id="Generate" class="section-part">
        <button><span class="heading">Generate <i class="bi bi-bullseye"></i></span></button>
+       <div class="container">
+         <div class="log-terminal2">In case fetch fails generate a few more times!</div>
+         <div id="loading" style="display: none" class="log-terminal">⏳ Generating...</div>
+       </div>
   </section>
 
   <div class="divider"></div>
@@ -239,32 +243,7 @@
   
 
 
-    <div class="container">
-      <h1>AI Resume & Cover Letter Writer</h1>
-      <form id="resumeForm">
-        <input type="text" name="name" placeholder="Full Name" required />
-        <textarea name="education" placeholder="Education" required></textarea>
-        <textarea
-          name="experience"
-          placeholder="Work Experience"
-          required
-        ></textarea>
-        <textarea
-          name="skills"
-          placeholder="Skills (comma separated)"
-          required
-        ></textarea>
-        <input
-          type="text"
-          name="job_role"
-          placeholder="Target Job Role"
-          required
-        />
-        <button type="submit">Generate</button>
-      </form>
-      <div id="loading" style="display: none">⏳ Generating...</div>
-      <div id="outputArea"></div>
-    </div>
+    
 
     
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
