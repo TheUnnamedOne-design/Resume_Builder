@@ -74,7 +74,7 @@ function appendProjects()
   divcont3.setAttribute("class","Input-Field");
   var inp1=document.createElement("input");
   inp1.type="text";
-  inp1.name="Title:";
+  inp1.name="Title";
   inp1.placeholder="Title";
   divcont3.appendChild(inp1);
 
@@ -84,7 +84,7 @@ function appendProjects()
   divcont6.setAttribute("class","Input-Field");
   var inp2=document.createElement("input");
   inp2.type="text";
-  inp2.name="link";
+  inp2.name="link_project";
   inp2.placeholder="Repo or deployed link (optional)";
   divcont6.appendChild(inp2);
 
@@ -130,7 +130,7 @@ function appendSkills()
   divcont3.setAttribute("class","Input-Field");
   var inp1=document.createElement("input");
   inp1.type="text";
-  inp1.name="Skill:";
+  inp1.name="Skill";
   inp1.placeholder="Skill";
   divcont3.appendChild(inp1);
 
@@ -177,7 +177,7 @@ function appendExperience()
 
   divcont4.setAttribute("class","Input-Field");
   var inp2=document.createElement("textarea");
-  inp2.name="Role Description";
+  inp2.name="Role_Description";
   inp2.placeholder="Role Description";
   divcont4.appendChild(inp2);
 
@@ -199,8 +199,11 @@ function appendExperience()
   contain.appendChild(divh4);
 }
 
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("resumeForm").addEventListener("submit", async (e) => {
+  document.getElementById("Resume").addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const loading = document.getElementById("loading");
@@ -208,12 +211,26 @@ document.addEventListener("DOMContentLoaded", () => {
     output.innerHTML = "";
     loading.style.display = "block";
 
-    const formData = Object.fromEntries(new FormData(e.target).entries());
 
-    // 🌐 Set base URL depending on environment
+    const formData = {};
+    const rawFormData = new FormData(e.target);
+    
+    for (const [key, value] of rawFormData.entries()) {
+      if (!formData[key]) {
+        formData[key] = [];
+      }
+      formData[key].push(value);
+    }
+    
+    
+    console.log("Form data:", formData);
+
+
+   // 🌐 Set base URL depending on environment
     const baseURL = window.location.hostname.includes("localhost")
       ? "http://localhost:5000" // Local dev
       : "https://resume-builder-cbjz.onrender.com"; // Render backend
+
 
     try {
       const response = await fetch(`${baseURL}/generate`, {
