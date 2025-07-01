@@ -968,3 +968,26 @@ button:hover {
 {
   border: none;
 }
+
+#Generate .container
+{
+  margin-top: 30px;
+}
+
+#Generate .log-terminal
+{
+  font-family: 'Work Sans';
+  height: 100px;
+  width: 100%;
+  font-size: var(--font-size-l);
+  padding-top: 30px;
+  background-color: var(--medium-gray-color);
+}
+#Generate .log-terminal2
+{
+  font-family: 'Work Sans';
+  height: 100px;
+  width: 100%;
+  font-size: var(--font-size-l);
+  padding-top: 30px;
+}
