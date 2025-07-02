@@ -17,50 +17,24 @@ An intelligent, full-stack web application that helps users generate professiona
 
 
 resume-writer/
-├── client/                     # Plain HTML/CSS/JavaScript frontend
-│   ├── index.html              # Homepage with input form
-│   ├── preview.html            # Resume/cover letter preview page
-│   ├── styles/
-│   │   └── main.css            # All frontend styling
-│   └── js/
-│       └── main.js             # Form logic and API integration
-│
-├── server/                     # Flask backend
-│   ├── api/
-│   │   └── routes.py           # API endpoints for GPT, PDF, DB
-│   ├── services/
-│   │   ├── openai_service.py   # GPT-4 generation logic
-│   │   ├── pdf_service.py      # PDF conversion logic
-│   │   └── validation_service.py
-│   ├── models/
-│   │   └── resume_model.py     # ORM model for resumes
-│   ├── templates/
-│   │   └── resume_template.html # Jinja2 template for rendering resumes
-│   ├── utils/
-│   │   └── config.py           # Config and environment loader
-│   ├── app.py                  # Main Flask app entry
-│   └── __init__.py             # App factory init
-│
-├── pdf_engine/                 # PDF rendering module
-│   └── resume_template.html    # HTML template used for PDF export
-│
-├── database/                   # DB schema and seeders
-│   ├── models.py
-│   └── seed.py
-│
-├── docker/                     # Containerization setup
-│   ├── Dockerfile.backend
-│   ├── Dockerfile.frontend
-│   └── docker-compose.yml
-│
-├── tests/                      # Unit and integration tests
-│   ├── api_tests.py
-│   └── unit/
-│       ├── test_openai_service.py
-│       └── test_pdf_service.py
-│
-├── .env                        # Environment variables
-└── README.md                   # Project instructions and documentation
+├── client/ # Plain HTML/CSS/JavaScript frontend
+│ ├── index.html # Input form for user data
+│ ├── preview.html # Generated resume preview
+│ ├── styles/ # CSS styling
+│ └── js/ # Frontend logic and API handlers
+├── server/ # Flask backend
+│ ├── api/ # API endpoints for resume generation
+│ ├── services/ # GPT, PDF, and validation logic
+│ ├── models/ # ORM model for resume storage
+│ ├── templates/ # Jinja2 template rendering
+│ ├── utils/ # Config and environment management
+│ ├── app.py # Main application entry point
+├── pdf_engine/ # Resume HTML template for PDF rendering
+├── database/ # DB schema and seeders
+├── docker/ # Docker & Docker Compose setup
+├── tests/ # Unit and integration tests
+├── .env # Environment variables (API keys, DB path)
+└── README.md # Project documentation
 
 
 
