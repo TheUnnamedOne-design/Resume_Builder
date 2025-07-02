@@ -157,7 +157,7 @@ function appendExperience()
   divcont3.setAttribute("class","Input-Field");
   var inp1=document.createElement("input");
   inp1.type="text";
-  inp1.name="Role:";
+  inp1.name="Role";
   inp1.placeholder="Role";
   divcont3.appendChild(inp1);
 
