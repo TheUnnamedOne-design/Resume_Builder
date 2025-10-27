@@ -14,7 +14,7 @@ if not api_key:
 genai.configure(api_key=api_key)
 
 # ✅ Choose model: use "gemini-1.5-flash" for speed or "gemini-1.5-pro" for accuracy
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-1.5-flash-latest"
 
 def generate_response(prompt):
     """
